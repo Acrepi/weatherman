@@ -1,0 +1,40 @@
+App\Entity\Place:
+  properties:
+    x_axis:
+      - Range:
+          min: -90
+          max: 90
+          groups: ['create', 'edit']
+    y_axis:
+      - Range:
+          min: -180
+          max: 180
+          groups: ['create', 'edit']
+
+App\Entity\Weather:
+  properties:
+    temperature:
+      - Range:
+          min: -50
+          max: 50
+          groups: ['create', 'edit']
+    humiditi:
+      - Range:
+          min: 0
+          max: 100
+          groups: ['create', 'edit']
+    wind_speed:
+      - Range:
+          min: 0
+          max: 100
+          groups: ['create', 'edit']
+    pressure:
+      - Range:
+          min: 900
+          max: 1100
+          groups: ['create', 'edit']
+    UV:
+      - Range:
+          min: 0
+          max: 16
+          groups: ['create', 'edit']
